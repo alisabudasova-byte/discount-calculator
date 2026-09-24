@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #2a2a2a;
+}
+
+.calculator {
+    width: 600px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgb(60, 60, 60);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calculator h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #464ee3;
+}
+
+.error-input {
+    border-color: #d32f2f;
+}
+
+.error {
+    margin: 6px 0 0;
+    color: #d32f2f;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons button:first-child {
+    background: #464ee3;
+    color: white;
+}
+
+.buttons button:last-child {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.results h2 {
+    margin-bottom: 15px;
+}
+
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.results td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.results .total td {
+    font-size: 18px;
+    border-top: 2px solid #333;
+    border-bottom: none;
+}
